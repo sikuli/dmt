@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+var program = require('commander'),
+    download = require('../lib/download')
+
+program
+    .command('download dataset')
+    .description('download a slice of a given dataset')
+    .action(function(dataset) {
+        download(dataset)
+    })
+
+
+program.parse(process.argv)
