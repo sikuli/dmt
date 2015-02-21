@@ -4,11 +4,11 @@ var program = require('commander'),
     download = require('../lib/download')
 
 program
-    .command('download dataset')
-    .description('download a slice of a given dataset')
-    .action(function(dataset) {
-        download(dataset)
+    .command('download [dataset] [amount]')
+    .description('Download a slice of a given dataset.')
+    .option("-a, --all")
+    .action(function(dataset, amount, options) {
+        download(dataset, amount, options.all)
     })
-
 
 program.parse(process.argv)
