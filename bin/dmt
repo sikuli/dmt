@@ -11,12 +11,12 @@ program
         download(dataset, amount, options.all)
     })
 
-
 program.on('--help', function(){
 	console.log('    -a, --all  Download all.')
 	console.log("\n  Datasets:")
 	console.log("\n    ebird: Data set for Nature Net project.")
 	console.log("\n    apks: Android APKs")
+    console.log("\n    web: List of websites at certain time.")
 	console.log('')
 })
 
