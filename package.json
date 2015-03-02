@@ -18,6 +18,6 @@
   "dependencies": {
     "commander": "^2.6.0",
     "download-status": "~2.1.1",
-    "download": "~4.0.1"
+    "download": "~3.3.0"
   }
 }
